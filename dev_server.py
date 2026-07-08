@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-PUBLIC = ROOT / "public"
+PUBLIC = ROOT
 sys.path.insert(0, str(ROOT))
 
 
