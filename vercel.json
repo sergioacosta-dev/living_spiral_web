@@ -1,14 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/*.py", "use": "@vercel/python" },
-    { "src": "public/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/api/today",       "dest": "/api/today.py" },
-    { "src": "/api/kin",         "dest": "/api/kin.py" },
-    { "src": "/api/practices",   "dest": "/api/practices.py" },
-    { "src": "/api/meditations", "dest": "/api/meditations.py" },
-    { "src": "/(.*)",            "dest": "/public/$1" }
-  ]
+  "outputDirectory": "public"
 }
