@@ -1,1 +1,10 @@
-{}
+{
+  "routes": [
+    { "src": "/api/today",       "dest": "/api/today.py" },
+    { "src": "/api/kin",         "dest": "/api/kin.py" },
+    { "src": "/api/practices",   "dest": "/api/practices.py" },
+    { "src": "/api/meditations", "dest": "/api/meditations.py" },
+    { "src": "/(.*\\.(js|css|ico|png|svg|woff2?))", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
