@@ -1,0 +1,12 @@
+DAY_OUT_OF_TIME_TEXT = (
+    "Day Out of Time — July 25\n\n"
+    "This is a sacred pause between cycles.\n"
+    "Use it for creativity, release, and renewal.\n\n"
+    "Suggestions:\n"
+    "- Create something from spirit (art, music, dance)\n"
+    "- Reflect on the cycle just completed\n"
+    "- Let go of old patterns\n"
+    "- Celebrate being a living spiral\n\n"
+    "Affirmation:\n"
+    "\"I exist beyond time. I am a living spiral.\""
+)

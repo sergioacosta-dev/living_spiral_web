@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Living Spiral</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Bottom nav -->
+    <nav id="bottom-nav">
+      <button class="nav-btn active" data-tab="home">
+        <span class="nav-icon">⊙</span>
+        <span>Home</span>
+      </button>
+      <button class="nav-btn" data-tab="kin">
+        <span class="nav-icon">✦</span>
+        <span>Kin Finder</span>
+      </button>
+      <button class="nav-btn" data-tab="practices">
+        <span class="nav-icon">☽</span>
+        <span>Practices</span>
+      </button>
+      <button class="nav-btn" data-tab="meditations">
+        <span class="nav-icon">☯</span>
+        <span>Meditations</span>
+      </button>
+    </nav>
+
+    <!-- Screens -->
+    <main id="screens">
+
+      <!-- HOME -->
+      <section id="tab-home" class="tab active">
+        <div class="scroll-content" id="home-content">
+          <div class="loading">Loading today's spiral…</div>
+        </div>
+      </section>
+
+      <!-- KIN FINDER -->
+      <section id="tab-kin" class="tab">
+        <div class="scroll-content">
+          <h1 class="screen-title">FIND YOUR KIN</h1>
+          <p class="subtitle">Enter your birth date to discover<br>your galactic signature</p>
+
+          <div class="card input-card">
+            <div class="field-group">
+              <input id="kin-year"  type="number" placeholder="Year  (e.g. 1990)"
+                     min="1858" max="2117" />
+            </div>
+            <div class="field-row">
+              <input id="kin-month" type="number" placeholder="Month  (1 – 12)" min="1" max="12" />
+              <input id="kin-day"   type="number" placeholder="Day  (1 – 31)"   min="1" max="31" />
+            </div>
+          </div>
+
+          <button class="link-btn" id="use-today-btn">USE TODAY</button>
+          <button class="primary-btn" id="calc-btn">CALCULATE MY KIN</button>
+          <p class="error-msg" id="kin-error"></p>
+
+          <div id="kin-result"></div>
+        </div>
+      </section>
+
+      <!-- PRACTICES -->
+      <section id="tab-practices" class="tab">
+        <div class="scroll-content" id="practices-content">
+          <div class="loading">Loading practices…</div>
+        </div>
+      </section>
+
+      <!-- MEDITATIONS -->
+      <section id="tab-meditations" class="tab">
+        <div class="scroll-content" id="meditations-content">
+          <div class="loading">Loading meditations…</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
