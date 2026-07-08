@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 def _import_handler(name):
     import importlib.util, types
 
-    # Provide a fake package so relative imports in api/_utils.py work
+    # Provide a fake package so relative imports in api/api_utils.py work
     pkg_name = "api"
     if pkg_name not in sys.modules:
         pkg = types.ModuleType(pkg_name)

@@ -9,7 +9,7 @@ for _p in (_API_DIR, _ROOT_DIR):
         sys.path.insert(0, _p)
 
 from http.server import BaseHTTPRequestHandler
-from _utils import json_response
+from api_utils import json_response
 
 from living_spiral import get_today_moon_data, MOON_QUESTIONS
 

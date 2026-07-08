@@ -9,7 +9,7 @@ for _p in (_API_DIR, _ROOT_DIR):
 
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
-from _utils import json_response, error_response
+from api_utils import json_response, error_response
 
 TXT_DIR = os.path.join(_ROOT_DIR, "txt_files")
 
