@@ -1,12 +1,8 @@
 """Shared utilities for Vercel Python serverless handlers."""
 import json
 import os
-import sys
 
-# Ensure the project root is on the path so living_spiral imports work
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if ROOT not in sys.path:
-    sys.path.insert(0, ROOT)
 
 
 def json_response(handler, data, status=200):

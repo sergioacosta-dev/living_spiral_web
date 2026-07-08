@@ -1,10 +1,17 @@
+import os
+import sys
+
+_API_DIR  = os.path.dirname(os.path.abspath(__file__))
+_ROOT_DIR = os.path.dirname(_API_DIR)
+for _p in (_API_DIR, _ROOT_DIR):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
-from ._utils import json_response, error_response, ROOT
-import sys, os
-sys.path.insert(0, ROOT)
+from _utils import json_response, error_response
 
-TXT_DIR = os.path.join(ROOT, "txt_files")
+TXT_DIR = os.path.join(_ROOT_DIR, "txt_files")
 
 MEDITATIONS = {
     "galactic_prayer":          "Galactic Prayer",
